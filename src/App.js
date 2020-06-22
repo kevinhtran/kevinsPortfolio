@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
 import './App.css';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -31,7 +33,9 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-
+        <Container className="p-0" fluid={true}>
+          <p>Hi from react</p>
+        </Container>
       </Router>
     );
   }
@@ -47,4 +51,5 @@ export default App;
 // step 3: in the terminal, run this command for the react router: 'npm install --save -react-router-dom' then 'npm run start'
 // step 4: after installing react router. you can add <Router> to your render() and import up top.
 // step 5: we also want to install reactstrap which is bootstrap with react. terminal: 'npm install --save react-bootstrap bootstrap'
-
+// this allows for us to put things in and see stuff
+// step 6: now we're going to create a container inside of the render.
