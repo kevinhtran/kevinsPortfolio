@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 
 class App extends React.Component {
@@ -29,7 +30,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>Hello World</div>
+      <Router>
+
+      </Router>
     );
   }
 
@@ -42,3 +45,6 @@ export default App;
 // step 2: make a constructor to get props and super() to take in those props. have the state for the top level stuff on the website
 // state is for the title that will be in the nav bar/header, state for the link that is inside of the navbar, state for the home/about/contact page but only the title of these pages
 // step 3: in the terminal, run this command for the react router: 'npm install --save -react-router-dom' then 'npm run start'
+// step 4: after installing react router. you can add <Router> to your render() and import up top.
+// step 5: we also want to install reactstrap which is bootstrap with react. terminal: 'npm install --save react-bootstrap bootstrap'
+
