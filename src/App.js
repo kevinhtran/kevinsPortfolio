@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -48,6 +49,7 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          <Footer/>
         </Container>
       </Router>
     );
@@ -56,18 +58,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-// step 1: Convert the app.js component into a class base component because we will be using state in here
-// step 2: make a constructor to get props and super() to take in those props. have the state for the top level stuff on the website
-// state is for the title that will be in the nav bar/header, state for the link that is inside of the navbar, state for the home/about/contact page but only the title of these pages
-// step 3: in the terminal, run this command for the react router: 'npm install --save -react-router-dom' then 'npm run start'
-// step 4: after installing react router. you can add <Router> to your render() and import up top.
-// step 5: we also want to install reactstrap which is bootstrap with react. terminal: 'npm install --save react-bootstrap bootstrap'
-// this allows for us to put things in and see stuff
-// step 6: now we're going to create a container inside of the render.
-// step 7: create a navbar
-  // add brand
-  // add a toggle
-  // add collapse
-  // add a nav
