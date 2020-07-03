@@ -16,26 +16,26 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: '',
-          subTitle: '',
+          title: 'Github',
+          subTitle: 'View my repositories.',
           imgSrc: pic1,
-          link: '',
+          link: 'https://github.com/kevinhtran',
           selected: false
         },
         {
           id: 1,
-          title: '',
-          subTitle: '',
+          title: 'Twitter',
+          subTitle: 'Check out my tweets.',
           imgSrc: pic2,
-          link: '',
+          link: 'https://twitter.com/kev_developer',
           selected: false
         },
         {
           id: 2,
-          title: '',
-          subTitle: '',
+          title: 'Instagram',
+          subTitle: 'View my posts.',
           imgSrc: pic3,
-          link: '',
+          link: 'https://www.instagram.com/kevdeveloper/',
           selected: false
         }
       ]
@@ -44,6 +44,8 @@ class Carousel extends React.Component {
 
   // this alows for only one card to be selected at a time
   handleCardClick = (id, card) => {
+    console.log(id);
+
     let items = [...this.state.items];
 
     items[id].selected = items[id].selected ? false : true;
