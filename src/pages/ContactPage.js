@@ -30,6 +30,15 @@ class ContactPage extends React.Component {
     })
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault(); //prevent default behavior of refreshing the page
+
+    this.setState({
+      disabled: true // disable ability for user to sent multiple emails
+      
+    })
+  }
+
   render() {
     return(
       <div>
