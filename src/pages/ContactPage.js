@@ -34,7 +34,7 @@ class ContactPage extends React.Component {
     event.preventDefault(); //prevent default behavior of refreshing the page
 
     this.setState({
-      disabled: true // disable ability for user to sent multiple emails
+      disabled: true, // disable ability for user to sent multiple emails
       emailSent: false
     })
   }
