@@ -2,9 +2,9 @@ import React from 'react';
 
 import Card from '../components/Card';
 
-import pic1 from '../assets/images/pic1.png';
-import pic2 from '../assets/images/pic2.png';
-import pic3 from '../assets/images/pic3.png';
+import pic1 from '../assets/images/pic1.jpg';
+import pic2 from '../assets/images/pic2.jpg';
+import pic3 from '../assets/images/pic3.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -16,28 +16,31 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: 'Github',
-          subTitle: 'View my repositories.',
-          imgSrc: pic1,
-          link: 'https://github.com/kevinhtran',
+          title: 'Kurated Sound',
+          subTitle: 'Single Page App Prototype',
+          imgSrc: pic2,
+          link: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/kuratedsound.png',
+          link2: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/kuratedsound.fig',
           selected: false
         },
         {
           id: 1,
-          title: 'Twitter',
-          subTitle: 'Check out my tweets.',
-          imgSrc: pic2,
-          link: 'https://twitter.com/kev_developer',
+          title: 'Vietnoms Restaurant',
+          subTitle: 'Homepage Prototype',
+          imgSrc: pic3,
+          link: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/vietnoms.png',
+          link2: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/vietnoms.fig',
           selected: false
         },
         {
           id: 2,
-          title: 'Instagram',
-          subTitle: 'View my posts.',
-          imgSrc: pic3,
-          link: 'https://www.instagram.com/kevdeveloper/',
+          title: 'Visual Content',
+          subTitle: 'Homepage Prototype',
+          imgSrc: pic1,
+          link: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/visualcontent.png',
+          link2: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/visualcontent.fig',
           selected: false
-        }
+        },
       ]
     }
   }
