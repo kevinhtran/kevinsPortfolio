@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import pic1 from '../assets/images/pic1.jpg';
 import pic2 from '../assets/images/pic2.jpg';
 import pic3 from '../assets/images/pic3.jpg';
+import pic4 from '../assets/images/pic4.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -35,12 +36,22 @@ class Carousel extends React.Component {
         {
           id: 2,
           title: 'Visual Content',
-          subTitle: 'Homepage Prototype',
+          subTitle: 'Homepage Prototype with animation.',
           imgSrc: pic1,
           link: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/visualcontent.png',
           link2: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/visualcontent.fig',
           selected: false
         },
+        {
+          id: 3,
+          title: 'Airbnb Clone',
+          subTitle: 'Wireframe with UI library and user-flow prototype.',
+          imgSrc: pic4,
+          link: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/airbnbprototype.png',
+          link2: 'https://ktranspicbucket.s3-us-west-1.amazonaws.com/airbnbwireframe.fig',
+          selected: false
+        },
+        
       ]
     }
   }
