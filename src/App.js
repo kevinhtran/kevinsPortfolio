@@ -23,9 +23,9 @@ class App extends React.Component {
       ],
       // the top level info for each page in particular
       home: {
-        title: 'UI/UX Web Designer',
+        title: 'Front-End Developer & Designer',
         subTitle: 'My name is Kevin Tran from the Bay Area.',
-        text: 'I design and prototype useful experiences for websites. Click on the cards below to view/download my projects.',
+        text: 'I have designed and prototyped useful experiences for websites. Click on the cards below to view/download my projects.',
       },
       about: {
         title: 'About Me'
